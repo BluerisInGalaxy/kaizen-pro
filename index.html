@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen-Pro</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="header__div container">
+            <a href="#" class="main-img__link">
+                <img src="./img/logo.png" alt="" class="main-img">
+            </a>
+            <ul class="header__items">
+                <li class="header__item">
+                    <a href="#about-us" class="header__item-link">
+                        <p class="header__item-text lang-header-about-us">О нас</p>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#our-production" class="header__item-link">
+                        <p class="header__item-text lang-header-our-production">Наша продукция</p>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#our-partners" class="header__item-link">
+                        <p class="header__item-text lang-header-our-partners">Наши партнеры</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="header__item__langchanger">
+                <select name="" id="select-lang">
+                    <option class="select-lang-option" value="en">EN</option>
+                    <option class="select-lang-option" value="ru" selected>RU</option>
+                    <option class="select-lang-option" value="uz">UZ</option>
+                </select>
+            </div>
+            <div class="toggle ">
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#about-us" onclick="unactive()" class="menu__link lang-toggle-about-us">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#our-production" onclick="unactive()" class="menu__link lang-toggle-our-production">Наша продукция</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#our-partners" onclick="unactive()" class="menu__link lang-toggle-our-partners">Наши партнеры</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="about-us" class="about-us"> 
+            <p class="about-us-main-text  lang-title-about-us">О Нас</p>
+            <div class="about-us-div container">   
+                <div class="about-us-img-div half-container">
+                    <img src="" class="about-us-img">Photo
+                </div>
+                <div class="about-us-text-div half-container">
+                    <h2 class="about-us-title lang-title-about-our-company">О Нашей Компании</h2>
+                    <p class="about-us-text lang-text-about-our-company">Компания Kaizen-Pro была основана в 2020 году. За все время работы компании были проданы более 1000 продуктов по интервеционной кардиологии.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-production" class="our-production">
+            <div class="our-production-div container">
+                <h2 id="our-production-text" class="lang-title-our-production">Наша Продукция</h2>
+                <ul class="production-list">
+                    <li class="production">
+                        <img src="./img/коронарные стенты.jpg" class="production-img">
+                        <p class="production-info lang-info-coronary-stents">Коронарные Стенты</p>
+                    </li>
+                    <li class="production">
+                        <img src="./img/коронарные баллоны.jpg" class="production-img">
+                        <p class="production-info lang-info-coronary-balloons">Коронарные Баллоны</p>
+                    </li>
+                    <li class="production">
+                        <img src="./img/коронарные проводники.jpg" class="production-img">
+                        <p class="production-info lang-info-сoronary-guidewires">Коронарные Проводники</p>
+                    </li>
+                    <li class="production">
+                        <img src="./img/Проводниковые катетеры.png" class="production-img">
+                        <p class="production-info lang-info-guiding-catheters">Проводниковые Катетеры</p>
+                    </li>
+                    <li class="production">
+                        <img src="./img/Интродьюсеры.jpg" class="production-img">
+                        <p class="production-info lang-info-introducers">Интродьюсеры</p>
+                    </li>
+                    <li class="production">
+                        <img src="./img/Диагностические катетеры.png" class="production-img">
+                        <p class="production-info lang-info-diagnostic-catheters">Диагностические Катетеры</p>
+                    </li>
+                    <li class="production">
+                        <img src="./img/Диагностические проводники.jpg" class="production-img">
+                        <p class="production-info lang-info-diagnostic-guidewires">Диагностические Проводники</p>
+                    </li>
+                    <li class="production">
+                        <img src="./img/Индефляторы.jpg" class="production-img">
+                        <p class="production-info lang-info-indeflators">Индефляторы</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="our-partners" class="our-partners">
+            <div class="our-partners-div container">
+                <h2 class="our-partners-main-title lang-title-our-partners">Наши Партнеры</h2>
+                <p class="our-partners-main-text lang-our-partners-text">На данный момент компания Kaizen-Pro не имеет официальных партнеров. Вся продукция поставляется неофициально.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-div container">
+            <div class="footer-contacts-div half-container">
+                <a class="footer-phone-num footer-def-part lang-phone-num" href="tel:+998913309780">Позвонить Нам</a>
+                <a class="footer-email footer-def-part lang-email-address" href="mailto:kaizen.pro.uzbekistan@gmail.com">Электронная Почта</a>
+                <p class="footer-office-address lang-office-address">Узбекистан, г. Ташкент 100115, Чиланзарский район 3-Квартал,  Дом 44/1. Авторские Права ©Kaizen-Pro LLC 2022</p>
+            </div>
+            <div class="footer-maps-div half-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.38260673874152!2d69.22434058687983!3d41.28445556413939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e4908c34fc03336!2sKaizen-Pro!5e0!3m2!1sen!2s!4v1659597480894!5m2!1sen!2s" class="footer-maps"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/lang.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
